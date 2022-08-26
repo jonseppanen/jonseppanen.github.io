@@ -1,1 +1,0 @@
-# jonseppanen.github.io
