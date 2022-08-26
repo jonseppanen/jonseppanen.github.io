@@ -1,0 +1,380 @@
+img {
+    display: block;
+}
+
+.flexrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.callout {
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-align: justify;
+    text-align-last: justify;
+    font-weight: 250;
+    font-size: 3rem;
+    line-height: 1.25;
+    letter-spacing: 0.25rem;
+}
+
+.callout.iam {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.callout.bigjon {
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.callout.ilove {
+    margin: 3rem 0;
+}
+
+.flexrow.pre {
+    margin: 2rem 0;
+}
+
+.callout.pre {
+    color: #bada55;
+    font-size: 0.9rem;
+    letter-spacing: 0.6ch;
+}
+.callout.pre:not(:first-of-type)::before {
+    content: "•";
+    margin: 0 1rem;
+}
+
+.avatar {
+    display: inline;
+    vertical-align: top;
+    position: relative;
+    letter-spacing: 3rem;
+    color: transparent;
+    margin-left: 0.1rem;
+}
+.poke {
+    user-select: none;
+    display: block;
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -49%);
+    border: 0.5rem solid #eef;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url("img/avatar.jpg");
+    background-size: 100%;
+    box-shadow: inset 0 0 10px #000;
+}
+
+.heading {
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.skillblock ul {
+    width: 100%;
+    max-width: 100ch;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, 8rem);
+    grid-template-rows: auto;
+    padding: 2rem;
+}
+
+.skillblock li {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.skillblock .skillstats {
+    padding: 0.25rem 0;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skillblock .skillstats p {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.skillblock .skillstats p.started {
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.skillblock li img {
+    display: block;
+    height: 3rem;
+    object-fit: contain;
+}
+
+.stack {
+    padding: 1rem 2rem;
+    display: flex;
+    width: 100%;
+    max-width: 100ch;
+    margin: 0 auto;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.block {
+    padding: 2rem;
+    position: relative;
+}
+
+.left {
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+    text-align: right;
+    align-items: flex-end;
+}
+
+.title-big {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.title-huge {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.width-small {
+    max-width: 30ch;
+}
+
+.width-med {
+    max-width: 40ch;
+}
+
+.width-wide {
+    max-width: 80ch;
+}
+
+.spacer {
+    height: 6rem;
+    display: block;
+}
+
+.snide {
+    opacity: 0;
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+.quip{
+    font-style: italic;
+    color:#aaa;
+    font-weight: 300;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+.cut{
+    position: relative;
+    overflow: hidden;
+}
+
+.cut::before {
+    content: "";
+    position: absolute;
+    background-color: #bada55;
+    border:3px solid #000;
+}
+
+.cut.top-left::before {
+    top: 3px;
+    left: 3px;
+    width:50%;
+    height:100%;
+    transform: rotate(-70deg);
+    transform-origin: 0 100%;
+}
+
+.cut.top-right::before {
+    top: 3px;
+    right: 3px;
+    width:50%;
+    height:100%;
+    transform: rotate(80deg);
+    transform-origin: 100% 100%;
+}
+.cut.bottom-left::before {
+    top: 3px;
+    left: 3px;
+    width:50%;
+    height:100%;
+    transform: rotate(70deg);
+    transform-origin: 0 0;
+}
+
+.cut.bottom-right::before {
+    bottom: 3px;
+    right: 3px;
+    width:50%;
+    height:100%;
+    transform: rotate(-70deg);
+    transform-origin: 100% 0;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80ch;
+    margin: 0 auto;
+}
+
+.job {
+    padding: 2rem;
+}
+
+.timelinebutt {
+    text-transform: uppercase;
+    padding: 0 0.5rem 0 1.5rem;
+    background-color: #bada55;
+    display: inline-block;
+    color: #225;
+    font-weight: 600;
+    line-height: 2rem;
+    position: relative;
+    margin: 1rem 0;
+}
+.timelinebutt::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1rem 0 1rem 1rem;
+    border-color: transparent transparent transparent #000;
+    content: "";
+}
+
+.timelinebutt::after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1rem 0 1rem 1rem;
+    border-color: transparent transparent transparent #bada55;
+    content: "";
+}
+
+.jobtitle {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.job h2 {
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.75rem;
+    color: #f0cc22;
+}
+
+.chips {
+    margin-bottom: 1rem;
+}
+
+.chips p {
+    display: inline-block;
+    padding: 0 0.75rem;
+    line-height: 1.5rem;
+    font-size: 0.75rem;
+    vertical-align: middle;
+    background: linear-gradient(#000, #000) padding-box, linear-gradient(70deg, #9900FF, #FF9900) border-box;
+    border: 1.5px solid transparent;
+    color: #fff;
+    border-radius: 2rem;
+    margin: 0.25rem 0.1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.summary {
+    padding: 1rem 0;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.duties li {
+    margin-left: 2rem;
+    padding: 0.25rem 0;
+    position: relative;
+}
+
+.duties li::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    left: -1rem;
+    top: 0.6rem;
+}
+
+.pages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+}
+
+.embedder{
+    width:100%;
+    overflow: hidden; 
+    border-width:0px;
+    border-style: solid;
+    max-height: 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+.embedder.visible{
+    border-width:3px;
+    max-height: 1440px;
+}
